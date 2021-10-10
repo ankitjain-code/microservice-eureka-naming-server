@@ -1,4 +1,4 @@
 FROM openjdk:8
 ADD target/microservice-eureka-naming-server-0.0.1-SNAPSHOT.jar eureka.jar
 EXPOSE 8761
-EXTRYPOINT ["java","-jar","eureka.jar"]
+ENTRYPOINT ["java","-jar","eureka.jar"]
